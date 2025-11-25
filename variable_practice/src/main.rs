@@ -101,10 +101,53 @@ fn main() {
     println!("Another function.");
     another_function(5);
     print_labeled_measurement(5, 'h');
+    let z= five();
+    println!("the value of five is {z}");
+
+    let number = 5;
+
+    if number < 5{
+        println!("Too small");
+    }
+    else{
+        println!("idk");
+    }
+
+    let condition = true;
+    let number = if condition{5} else {7};
+
+    println!("The value of number is: {number}");
+
+
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {result}");
+
+    let xyz = [10, 20, 30, 40, 50];
+
+    for value in xyz {
+    println!("the value is: {value}");
+}
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
+
 }
 fn another_function(x: i32) {
     println!("The value of x is: {x}");
 }
 fn print_labeled_measurement(value: i32, unit_label: char) {
     println!("The measurement is: {value}{unit_label}");
+}
+fn five() -> i32{
+    5
 }
