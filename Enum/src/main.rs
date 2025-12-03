@@ -24,7 +24,7 @@ enum Coin {
     Penny,
     Nickel,
     Dime,
-    Quarter(UsState),
+    Quarter,
 }
  
 
@@ -51,12 +51,6 @@ fn main() {
         println!("The maximum is configured to be {max}");
     }
 
-        let coin = Coin::Penny;
-    let mut count = 0;
-    if let Coin::Quarter(state) = coin {
-        println!("State quarter from {state:?}!");
-    } else {
-        count += 1;
-    }
+
 }
 

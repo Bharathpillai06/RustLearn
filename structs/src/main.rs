@@ -6,11 +6,10 @@ struct User{
 
 }
 fn main() {
-let zuck = User{
+let mut zuck = User{
     active: true,
     name: String::from("ZUCK"),
-    age: 67,
-    email: String::from("ZUCK@gmail.com")
+     age: 67,
+     email: String::from("ZUCK@gmail.com")
 };
-    zuck.email = String::from("anotheremail@example.com");
 }

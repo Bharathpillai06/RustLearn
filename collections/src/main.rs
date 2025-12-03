@@ -77,6 +77,22 @@ fn main() {
     //if there’s no value for that key in the hash map, get will return None. 
     //This program handles the Option by calling copied to get an Option<i32> rather than an Option<&i32>, 
     //then unwrap_or to set score to zero if scores doesn’t have an entry for the key.
+
+    //traversal of a hash map is the same as a vector
+
+    for (key, value) in &scores {
+        println!("{key}: {value}");
+    }
+
+
+    let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+    // field_name and field_value are invalid at this point, try using them and
+    // see what compiler error you get!
+
     
 
 
