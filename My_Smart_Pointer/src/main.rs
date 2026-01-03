@@ -1,6 +1,6 @@
 use std::ops::Deref;
 
-impl<T> Deref for MyBox<T> {
+impl<T> Deref for MyBox<T> { 
     type Target = T;
 
     fn deref(&self) -> &T {
